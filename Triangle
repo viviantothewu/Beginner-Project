@@ -1,0 +1,9 @@
+def print_triangle(n):
+    for each_row in range (1, int(n)+1):     # goes through each row of the triangle
+        space = " "* (int(n)-each_row)
+        row = ""
+        for repeat in range (each_row):       # build each row 
+            row = row + n + " "
+        print (space + row)
+
+print_triangle ('4')
