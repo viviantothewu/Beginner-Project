@@ -1,0 +1,8 @@
+def miles_to_liters(mpg):
+""" this function calculates and return the fuel consumption of the vehicle in liters per 100 km."""
+    # (mpg*1.6) -> miles to km
+    # divide by 3.785 to convert to liters.
+    km_per_liter = (mpg * 1.6) / 3.785 
+
+    liters_per_100km = 100 / km_per_liter
+    return round(liters_per_100km, 1) # round decimal to 1. 
